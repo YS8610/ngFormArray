@@ -1,6 +1,8 @@
 # NgBike
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.  
+Sample website = https://ys8610.github.io/ngFormArray/  
+Sample code for using FormArray in Angular  
 
 ## Development server
 

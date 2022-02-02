@@ -1,0 +1,15 @@
+<div [formGroup]="companyForm">
+  <div>
+      <label for="companyName">Company Name</label>
+      <input id="companyName" type="text" formControlName="companyName" />
+  </div>
+  <ng-container formArrayName="admins">
+      <ng-container *ngFor="let adminForm of admins.controls; let i = index">
+          <div [formGroupName]="i">
+              <input id="name" type="text" formControlName="name" />
+              <input id="email" type="text" formControlName="email" />
+          </div>
+      </ng-container>
+  </ng-container>
+  <button type="button" (click)="addNewAdmin()">Add</button>
+</div>
