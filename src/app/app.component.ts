@@ -155,8 +155,7 @@ export class AppComponent implements OnInit {
       }
     })
     const dateString = new Date().toLocaleString();
-    const website = "https://app.arcanetrading.co/bikereport/"
-    const copyString = goodString+neutralString+badString+ "\n\nGenerated on: "+ dateString + "\n" + website;
+    const copyString = goodString+neutralString+badString+ "\n\nGenerated on: "+ dateString ;
     console.log(copyString);
     navigator.clipboard.writeText(copyString).then(function() {
       console.log("copy successfully");
